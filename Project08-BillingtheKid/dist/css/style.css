@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+
+.section-title {
+  color: #374249;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header {
+  background-color: #374249;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+header .container h2 {
+  color: #f38181;
+  font-weight: normal;
+}
+header .container nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+header .container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+header .container nav ul li a:hover {
+  color: #f38181;
+}
+
+#intro-section {
+  background: url("../images/intro.jpg") center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+  display: flex;
+  align-items: flex-end;
+}
+#intro-section .intro-content {
+  background-color: rgba(55, 66, 73, 0.5);
+  width: 100%;
+}
+#intro-section .intro-content .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#intro-section .intro-content .container h1, #intro-section .intro-content .container h6, #intro-section .intro-content .container p {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+#intro-section .intro-content .container h1 {
+  font-size: 4rem;
+}
+#intro-section .intro-content .container h6 {
+  font-size: 1.5rem;
+}
+#intro-section .intro-content .container p {
+  font-size: 1.5rem;
+}
+
+#tags-section {
+  background-color: #fff;
+}
+#tags-section .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#tags-section .container a {
+  color: #797979;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 3px 0 #797979;
+  border-radius: 1rem;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s ease;
+}
+#tags-section .container a:hover {
+  background-color: #797979;
+  color: #fff;
+}
+
+#services-section {
+  background-color: #f3f3f3;
+}
+#services-section .container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+#services-section .container article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+#services-section .container article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#services-section .container article .img-div {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#services-section .container article .img-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 243, 243, 0.4);
+  transition: all 0.4s ease;
+}
+#services-section .container article .img-div:hover {
+  cursor: pointer;
+}
+#services-section .container article .img-div:hover::after {
+  background-color: transparent;
+}
+#services-section .container article .img-div:hover ~ h4 {
+  color: #374249;
+}
+#services-section .container article .img-div:hover ~ h4 small {
+  color: #f38181;
+}
+#services-section .container article img {
+  width: 12rem;
+  max-width: 100%;
+  border-radius: 50%;
+}
+#services-section .container article h4 {
+  color: transparent;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+}
+#services-section .container article h4 small {
+  color: transparent;
+  font-size: 0.9rem;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+#pricing-section {
+  background-color: #fff;
+}
+#pricing-section .container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#pricing-section .container p {
+  color: #797979;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#pricing-section .container table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: auto;
+}
+#pricing-section .container table tr td {
+  color: #797979;
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+}
+#pricing-section .container table tr td.primary {
+  background-color: #f38181;
+  color: #fff;
+}
+#pricing-section .container table tr td.secondary {
+  background-color: #374249;
+  color: #fff;
+}
+#pricing-section .container table tr td.hiden {
+  visibility: hidden;
+  border: none;
+}
+#pricing-section .container a {
+  color: #797979;
+  text-decoration: none;
+  display: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  block-size: fit-content;
+  box-shadow: 0 0 3px 0 #797979;
+  border-radius: 1rem;
+  padding: 0.5rem 1.25rem;
+  margin: auto;
+  transition: all 0.2s ease;
+}
+#pricing-section .container a:hover {
+  background-color: #797979;
+  color: #fff;
+}
+
+#contact-section {
+  background-color: #f3f3f3;
+}
+#contact-section .container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#contact-section .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+#contact-section .container .row iframe {
+  max-width: 100%;
+}
+#contact-section .container .row form {
+  background-color: #f38181;
+  width: 600px;
+  padding: 0.75rem;
+}
+#contact-section .container .row form .form-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+#contact-section .container .row form .form-row select {
+  width: 20%;
+}
+#contact-section .container .row form .form-row input {
+  width: 100%;
+}
+#contact-section .container .row form > input {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+#contact-section .container .row form textarea {
+  resize: none;
+  width: 100%;
+}
+#contact-section .container .row form select, #contact-section .container .row form input, #contact-section .container .row form textarea {
+  background-color: #fff;
+  color: #797979;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  padding: 0.4rem 0.5rem;
+}
+
+footer {
+  background-color: #374249;
+}
+footer .container {
+  color: #fff;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer .container a {
+  color: #f38181;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  #services-section .container article img {
+    width: 10rem;
+  }
+  #services-section .container article h4 {
+    font-size: 1.25rem;
+  }
+  #services-section .container article h4 small {
+    font-size: 0.8rem;
+  }
+
+  #contact-section .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact-section .container .row form {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: static;
+  }
+  header .container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+  header .container h2 {
+    background-color: #f38181;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  header .container nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  header .container nav ul li a {
+    padding: 0.5rem;
+  }
+
+  #intro-section {
+    background: none;
+    height: auto;
+    min-height: auto;
+  }
+  #intro-section .intro-content {
+    background-color: #21282c;
+    position: static;
+  }
+  #intro-section .intro-content .container h1 {
+    font-size: 3rem;
+  }
+  #intro-section .intro-content .container h6, #intro-section .intro-content .container p {
+    font-size: 1.2rem;
+  }
+
+  #tags-section .container {
+    justify-content: center;
+  }
+
+  #services-section .container {
+    gap: 1.5rem;
+  }
+  #services-section .container article {
+    flex-direction: column;
+    text-align: center;
+  }
+  #services-section .container article:nth-child(even) {
+    flex-direction: column;
+  }
+  #services-section .container article .img-div::after {
+    background-color: transparent;
+  }
+  #services-section .container article h4 {
+    color: #374249;
+  }
+  #services-section .container article h4 small {
+    color: #f38181;
+  }
+
+  #pricing-section .container table {
+    display: none;
+  }
+  #pricing-section .container a {
+    display: block;
+  }
+
+  #contact-section .container .row form .form-row {
+    flex-direction: column;
+  }
+  #contact-section .container .row form .form-row select {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

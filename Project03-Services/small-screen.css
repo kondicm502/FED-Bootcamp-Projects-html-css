@@ -1,0 +1,37 @@
+@media (max-width: 800px) {
+  header nav ul {
+    gap: 2rem;
+  }
+
+  #home {
+    min-height: 480px;
+  }
+
+  #home .container {
+    padding: 1rem 2rem;
+  }
+
+  #services .container {
+    padding: 1rem 2rem;
+  }
+
+  #services .container p:nth-child(2) {
+    column-count: 1;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  #contact .container {
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  #contact .container img {
+    display: none;
+  }
+
+  footer {
+    padding: 0.5rem 2rem;
+  }
+}

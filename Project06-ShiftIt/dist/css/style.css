@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section-title {
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #d9af5d;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+header .container .logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header .container .logo-div img {
+  width: 3.5rem;
+}
+header .container nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0.2rem;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Staatliches", cursive;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+}
+header .container nav ul li a:hover {
+  color: #9692af;
+}
+
+#intro {
+  background: url("../images/business.jpg") center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+  display: flex;
+  align-items: flex-end;
+}
+#intro .intro-bottom {
+  background: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  padding: 2rem 0;
+}
+#intro .intro-bottom .container h1 {
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  font-size: 6rem;
+}
+#intro .intro-bottom .container p {
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.25rem;
+}
+
+#our-story {
+  background-color: lightgray;
+}
+#our-story .container {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+#our-story .container p {
+  font-family: "Open Sans Condensed", sans-serif;
+  column-count: 2;
+  text-indent: 2rem;
+  text-align: justify;
+}
+
+#technologies {
+  background-color: #fff;
+}
+#technologies .container {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+#technologies .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+#technologies .container .row .box {
+  background-color: #d9af5d;
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+}
+#technologies .container .row .box img {
+  width: 100%;
+  height: 100%;
+}
+#technologies .container .row .box .box-hover {
+  background: rgba(212, 212, 212, 0.7);
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.2s ease;
+}
+#technologies .container .row .box:hover {
+  cursor: pointer;
+}
+#technologies .container .row .box:hover .box-hover {
+  transform: scale(1);
+}
+
+#contact {
+  background-color: lightgray;
+}
+#contact .container {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+#contact .container .row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#contact .container .row form {
+  background-color: #d9af5d;
+  width: 50%;
+  padding: 0.5rem 1rem;
+}
+#contact .container .row form .form-group {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+#contact .container .row form .form-group input {
+  width: 50%;
+}
+#contact .container .row form > input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+#contact .container .row form textarea {
+  resize: none;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+#contact .container .row form button {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+#contact .container .row form button:hover {
+  background-color: #9692af;
+  color: #fff;
+  cursor: pointer;
+}
+#contact .container .row form input, #contact .container .row form textarea, #contact .container .row form button {
+  font-family: "Open Sans Condensed", sans-serif;
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+}
+#contact .container .row iframe {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #d9af5d;
+}
+footer .container {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  #intro .intro-bottom .container h1 {
+    font-size: 3.5rem;
+  }
+  #intro .intro-bottom .container p {
+    font-size: 1.2rem;
+  }
+
+  #our-story .container p {
+    column-count: 1;
+  }
+
+  #contact .container .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #contact .container .row form {
+    width: 500px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    position: static;
+  }
+  header .container {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+  header .container nav {
+    width: 100%;
+  }
+  header .container nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  header .container nav ul li {
+    width: 100%;
+  }
+  header .container nav ul li a {
+    display: block;
+    text-align: center;
+    border-top: 1px solid #725c30;
+    padding: 0.5rem;
+  }
+  header .container nav ul li:last-child {
+    border-bottom: 1px solid #725c30;
+  }
+
+  #intro {
+    height: auto;
+    min-height: auto;
+  }
+  #intro .intro-bottom {
+    position: static;
+  }
+  #intro .intro-bottom .container {
+    padding: 1rem;
+  }
+  #intro .intro-bottom .container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #intro .intro-bottom .container p {
+    display: none;
+  }
+
+  #our-story .container {
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  #technologies .container {
+    padding: 1rem;
+  }
+
+  #contact .container {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

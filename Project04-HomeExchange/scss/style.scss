@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-light;
+  }
+}
+
+header {
+  background-color: $color-secondary;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+
+  .location {
+    background: $color-primary;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem 0 1rem;
+
+    img {
+      width: 3rem;
+    }
+
+    a {
+      color: $color-light;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $color-light;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+section {
+  padding: 2rem;
+}
+
+#home {
+  background: url('../images/intro.jpg') center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+
+  .container {
+    background-color: transparentize($color-secondary, 0.5);
+    text-align: center;
+    color: $color-light;
+    width: 100%;
+    position: relative;
+    top: 70%;
+    padding: 0.2rem 1rem;
+    margin: auto;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: normal;
+    }
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+  }
+}
+
+#buttons {
+  background-color: #fff;
+  padding: 1rem 2rem;
+
+  .container {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+#apartments {
+  background-color: $color-bg;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    article {
+      height: 22rem;
+      position: relative;
+      overflow: hidden;
+
+      .apartment-details {
+        background: transparentize($color: $color-light, $amount: 0.5);
+        position: absolute;
+        top: -6rem;
+        height: 6rem;
+        width: 100%;
+        padding: 1rem;
+        transition: all 0.2s ease;
+      }
+
+      img {
+        min-width: 100%;
+        min-height: 100%;
+      }
+
+      &:hover {
+        .apartment-details {
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+#pricing {
+  background-color: #fff;
+
+  .container {
+    text-align: center;
+
+    h2 {
+      color: $color-dark;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: $color-dark;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 800px;
+      margin: auto;
+
+      tr:first-of-type td:first-of-type {
+        border: none;
+      }
+
+      td {
+        color: $color-dark;
+        border: 1px solid lightgrey;
+        padding: 0.5rem 1rem;
+      }
+
+      .td-primary {
+        background-color: $color-primary;
+        color: $color-light;
+      }
+
+      .td-secondary {
+        background-color: $color-secondary;
+        color: $color-light;
+      }
+    }
+
+    a {
+      display: none;
+    }
+  }
+}
+
+#contact {
+  background-color: $color-bg;
+  text-align: center;
+
+  .container {
+    .row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    h2 {
+      color: $color-dark;
+      margin-bottom: 1.5rem;
+    }
+
+    #map {
+      flex: 3;
+
+      iframe {
+        width: 400px;
+        height: 300px;
+      }
+    }
+
+    form {
+      flex: 4;
+      background-color: $color-primary;
+      padding: 1rem;
+
+      .form-group {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        select {
+          flex: 1;
+        }
+
+        input {
+          flex: 5;
+        }
+      }
+
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+      }
+
+      select, input, textarea {
+        color: $color-dark;
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color-secondary;
+  color: $color-light;
+  text-align: center;
+  padding: 1rem 2rem;
+
+  a {
+    color: $color-primary;
+    text-decoration: none;
+  }
+}
+
+@import 'medium-screen';
+@import 'small-screen';

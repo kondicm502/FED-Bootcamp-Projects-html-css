@@ -1,0 +1,247 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section-title {
+  font-family: $font-title;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: $color-primary;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    .logo-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.2rem;
+      font-family: $font-text;
+      font-weight: bold;
+      font-size: 1.5rem;
+
+      img { width: 3.5rem; }
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 0.2rem;
+
+      li a {
+        text-decoration: none;
+        color: #000;
+        font-family: $font-title;
+        font-size: 1.5rem;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $color-gray;
+        }
+      }
+    }
+  }
+}
+
+#intro {
+  background: url('../images/business.jpg') center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+  display: flex;
+  align-items: flex-end;
+  
+
+  .intro-bottom {
+    background: rgba(128, 128, 128, 0.5);
+    width: 100%;
+    padding: 2rem 0;
+
+    .container {
+
+      h1 {
+        color: #fff;
+        font-family: $font-title;
+        font-weight: normal;
+        font-size: 6rem;
+      }
+  
+      p {
+        color: #fff;
+        font-family: $font-text;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+#our-story {
+  background-color: lightgray;
+
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+
+    p {
+      font-family: $font-text;
+      column-count: 2;
+      text-indent: 2rem;
+      text-align: justify;
+    }
+  }
+}
+
+#technologies {
+  background-color: #fff;
+
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      align-items: center;
+
+      .box {
+        background-color: $color-primary;
+        position: relative;
+        overflow: hidden;
+        width: 90px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .box-hover {
+          background: rgba(212, 212, 212, 0.7);
+          font-family: $font-text;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          transform: scale(0);
+          transition: all 0.2s ease;
+        } 
+
+        &:hover {
+          cursor: pointer;
+
+          .box-hover {
+            transform: scale(1)
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  background-color: lightgray;
+
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+
+    .row {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      form {
+        background-color: $color-primary;
+        width: 50%;
+        padding: 0.5rem 1rem;
+
+        .form-group {
+          display: flex;
+          gap: 0.2rem;
+          margin-bottom: 0.2rem;
+
+          input { width: 50%; }
+        }
+
+        & > input {
+          width: 100%;
+          margin-bottom: 0.5rem;
+        }
+
+        textarea {
+          resize: none;
+          width: 100%;
+          margin-bottom: 0.5rem;
+        }
+
+        button {
+          width: 100%;
+          transition: all 0.2s ease;
+          
+          &:hover {
+            background-color: $color-gray;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+
+        input, textarea, button {
+          font-family: $font-text;
+          border: none;
+          outline: none;
+          padding: 0.2rem;
+        }
+      }
+
+      iframe {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color-primary;
+
+  .container {
+    text-align: center;
+    font-family: $font-text;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@import 'medium-screen';
+@import 'small-screen';

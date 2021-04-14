@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+  header {
+    background-color: $color-secondary;
+
+    .container {
+      justify-content: space-between;
+      max-width: 600px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      ul { display: none; }
+
+      .logo-div span { display: block; }
+
+      .hamburger-menu { display: block; }
+    }
+  }
+
+  #intro-section .container {
+    max-width: 600px;
+  }
+
+  #fast-nav-section .container .row {
+    .address {flex: 3;}
+
+    .links {flex: 2;}
+
+    iframe { 
+      flex: 4;
+      min-width: auto;
+    }
+  }
+}

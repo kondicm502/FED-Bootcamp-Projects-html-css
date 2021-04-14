@@ -1,0 +1,88 @@
+@media (max-width: 600px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: static;
+
+    .container {
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+  
+      h2 {
+        background-color: $color-primary;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        padding: 0.5rem;
+      }
+  
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+  
+        li a {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+
+  #intro-section {
+    background: none;
+    height: auto;
+    min-height: auto;
+
+    .intro-content {
+      background-color: darken($color-secondary, 10%);
+      position: static;
+
+      .container {
+        
+        h1 { font-size: 3rem; }
+        h6, p { font-size: 1.2rem; }
+      }
+    }
+  }
+
+  #tags-section .container {
+    justify-content: center;
+  }
+
+  #services-section .container {
+    gap: 1.5rem;
+
+    article {
+      flex-direction: column;
+      text-align: center;
+
+      &:nth-child(even) { flex-direction: column; }
+
+      .img-div::after { background-color: transparent; }
+
+      h4 {
+        color: $color-title;
+
+        small { color: $color-primary; }
+      }
+    }
+  }
+
+  #pricing-section .container {
+
+    table { display: none; }
+
+    a { display: block; }
+  }
+
+  #contact-section .container .row form .form-row {
+    flex-direction: column;
+
+    select { width: 100%; }
+  }
+}

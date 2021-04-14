@@ -1,0 +1,66 @@
+@media (max-width: 767px) {
+  .padding-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: static;
+
+    .container {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+
+      .hamburger-menu { display: none; }
+
+      .logo-div { padding-left: 1rem; }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        li a {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #intro-section { display: none; }
+
+  #about-section .container article {
+    flex-direction: column;
+    align-items: center;
+
+    .description { text-align: center; }
+
+    &:nth-of-type(even) { 
+      flex-direction: column; 
+
+      .description { text-align: center; }
+    }
+  }
+
+  #fast-nav-section .container .row {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .address { 
+      text-align: center; 
+      width: 400px;
+      max-width: 100%;
+    }
+
+    .links { display: none; }
+
+    iframe { 
+      flex: auto;
+      max-width: 100%; 
+    }
+  }
+}

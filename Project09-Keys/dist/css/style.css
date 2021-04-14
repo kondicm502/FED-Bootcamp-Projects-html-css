@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Staatliches&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.padding-x {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.padding-y {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  background-color: #122631;
+  color: #fab95b;
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2rem 3rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #f5564e;
+  color: #e8e2db;
+  text-decoration: none;
+  font-family: "Open Sans Condensed", sans-serif;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem 2rem;
+  margin: auto;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: #fab95b;
+  color: #122631;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+header .container {
+  background-color: #f5564e;
+  display: flex;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+header .container nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header .container nav ul li a {
+  color: #e8e2db;
+  text-decoration: none;
+  font-family: "Open Sans Condensed", sans-serif;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+}
+header .container nav ul li a:hover {
+  background-color: #fab95b;
+  color: #122631;
+}
+header .container img {
+  background-color: #f5564e;
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+#intro-section {
+  background: url("../images/main_background.jpg") center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+  position: relative;
+}
+#intro-section .intro-content {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+#intro-section .intro-content .container h2 {
+  color: #fab95b;
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  font-size: 5.5rem;
+}
+#intro-section .intro-content .container h5 {
+  color: #e8e2db;
+  font-family: "Staatliches", cursive;
+  font-weight: normal;
+  font-size: 2.25rem;
+}
+
+#options-section .container .options-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+#options-section .container .options-div article {
+  background-color: #f5564e;
+  width: 120px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+#options-section .container .options-div article img {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+#options-section .container .options-div article .option-details {
+  color: #e8e2db;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-left: 1.5rem solid #122631;
+  position: absolute;
+  top: -100%;
+  transition: all 0.3s ease;
+}
+#options-section .container .options-div article:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px #fab95b;
+}
+#options-section .container .options-div article:hover img {
+  bottom: -100%;
+}
+#options-section .container .options-div article:hover .option-details {
+  top: 0;
+}
+#options-section .container .btn {
+  display: none;
+}
+
+#testimonials-section {
+  background-color: #e8e2db;
+}
+#testimonials-section .container p {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: justify;
+  column-count: 3;
+}
+#testimonials-section .container .btn {
+  display: none;
+}
+
+#contact-section .container .row {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#contact-section .container .row form {
+  background-color: #e8e2db;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  padding: 0.65rem;
+}
+#contact-section .container .row form .form-row {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+#contact-section .container .row form .form-row input {
+  width: 100%;
+}
+#contact-section .container .row form > input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+#contact-section .container .row form textarea {
+  resize: none;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+#contact-section .container .row form button {
+  background-color: #f5564e;
+  color: #e8e2db;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+#contact-section .container .row form button:hover {
+  background-color: #fab95b;
+  color: #122631;
+  cursor: pointer;
+}
+#contact-section .container .row form select, #contact-section .container .row form input, #contact-section .container .row form textarea, #contact-section .container .row form button {
+  font-family: "Open Sans Condensed", sans-serif;
+  border: none;
+  outline: none;
+  padding: 0.25rem;
+}
+#contact-section .container .row iframe {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #f5564e;
+}
+footer .container {
+  color: #e8e2db;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  #intro-section .intro-content .container {
+    text-align: center;
+    top: 450px;
+  }
+
+  #testimonials-section .container p {
+    display: none;
+  }
+  #testimonials-section .container .btn {
+    display: block;
+  }
+
+  #contact-section .container .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .padding-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: static;
+  }
+  header img {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+  header nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  #intro-section {
+    background: #122631;
+    height: auto;
+    min-height: auto;
+  }
+  #intro-section .intro-content {
+    position: static;
+  }
+  #intro-section .intro-content .container h2 {
+    font-size: 2.5rem;
+  }
+  #intro-section .intro-content .container h5 {
+    font-size: 1.2rem;
+  }
+
+  #options-section .container .options-div {
+    display: none;
+  }
+  #options-section .container .btn {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

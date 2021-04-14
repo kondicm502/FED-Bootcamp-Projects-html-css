@@ -1,0 +1,20 @@
+@media (max-width: 800px) {
+
+  #services-section .container article {
+
+    img { width: 10rem; }
+
+    h4 { 
+      font-size: 1.25rem;
+
+      small { font-size: 0.8rem; }
+    }
+  }
+
+  #contact-section .container .row {
+    flex-direction: column;
+    align-items: center;
+
+    form { width: 100%; }
+  }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+  #intro-section .intro-content .container {
+    text-align: center;
+    top: 450px;
+  }
+
+  #testimonials-section .container {
+    p { display: none; }
+
+    .btn { display: block; }
+  }
+
+  #contact-section .container .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

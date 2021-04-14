@@ -1,0 +1,148 @@
+:root {
+  --light: #f3f3f3;
+  --dark: #333;
+  --color1: rgb(255, 100, 100);
+  --color2: rgb(68, 63, 100);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+}
+
+header {
+  background-color: var(--light);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+#sec1 {
+  background-color: var(--color1);
+  padding: 10rem 0 20rem 0;
+}
+
+#sec1 .container h2 {
+  color: var(--dark);
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+#sec2 {
+  background-color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+#sec2 .container {
+  width: 1000px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto; 
+  gap: 3rem;  
+}
+
+#sec2 .container .item {
+  color: var(--light);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+#sec2 .container .item .img-circle {
+  background-color:rgb(63, 58, 94);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+#sec3 {
+  background: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+#sec3 .container {
+  width: 1000px;
+  max-width: 100%;
+  text-align: center;
+}
+
+#sec3 .container h2 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+#sec3 .container p {
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+#sec3 .container form {
+  background-color: #d4d4d4;
+  display: grid;
+  grid-template-areas: 
+  "a b"
+  "c c"
+  ;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#sec3 .container form input {
+  border: none;
+  padding: 0.5rem;
+}
+
+#sec3 .container form textarea {
+  grid-area: c;
+  resize: none;
+  height: auto;
+  border: none;
+  padding: 0.5rem;
+}
+
+#sec3 .container form input:focus,
+#sec3 .container form textarea:focus {
+  outline: none;
+}

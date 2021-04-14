@@ -1,0 +1,55 @@
+@media (max-width: 700px) {
+  .padding-y {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  #intro-section .container {
+    nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      position: static;
+      width: 100%;
+  
+      h1 { align-self: flex-start; }
+  
+      ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        align-items: center;
+  
+        li a {
+          display: inline-block;
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    .intro-content {
+      h2 { 
+        font-size: 2rem; 
+        border-bottom-width: 1px;
+        padding: 0 1rem 0.25rem 1rem;
+      }
+
+      h5 { font-size: 1rem; }
+    }
+  }
+
+  #intro-section {
+    background: #000;
+    height: auto;
+    min-height: auto;
+  }
+
+  #catalog-section .container .vehicles-div {
+    grid-template-columns: auto;
+    max-width: 350px;
+  }
+  
+  #pricing-section .container {
+    table { display: none; }
+    .btn { display: block; }
+  }
+}

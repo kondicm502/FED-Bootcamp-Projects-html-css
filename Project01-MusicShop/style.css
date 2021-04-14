@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --primaryColor: rgb(200, 0, 0);
+  --darkColor: rgb(0, 0, 0);
+  --lightColor: rgb(200, 200, 200);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url('images/bg.jpg') center center/cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+header {
+  background: var(--primaryColor);
+  border-radius: 0 0 1rem 1rem;
+  padding: 0 2rem 0.5rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 5rem;
+}
+
+nav {
+  align-self: start;
+}
+
+nav ul {
+  height: 6.5rem;
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+}
+
+nav ul li {
+  background: var(--darkColor);
+  border-radius: 0 0 2.75rem 2.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+nav ul li a {
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0.25rem;
+}
+
+nav ul li a img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+nav ul li a img:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.1);
+}
+
+main {
+  background-color: var(--darkColor);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+main .row-top {
+  display: flex;
+}
+
+main .row-top img {
+  width: 400px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: -2rem;
+}
+
+main .row-top .column {
+  margin-bottom: 1rem;
+}
+
+main .row-top .column h2 {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+main .row-top .column h2 span {
+  background: var(--lightColor);
+  color: var(--darkColor);
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+  display: inline-block;
+  padding: 0.2rem 2.25rem 0.2rem 0.75rem;
+}
+
+main .row-top .column p {
+  color: var(--lightColor);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+main .row-bottom {
+  display: flex;
+  gap: 1rem;
+}
+
+main .row-bottom .card h3 {
+  background-color: var(--primaryColor);
+  color: var(--lightColor);
+  font-family: 'Lobster', cursive;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main .row-bottom .card p {
+  color: var(--lightColor);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-bottom: 0.5rem;
+}
+
+main .row-bottom .card a {
+  background: var(--lightColor);
+  color: var(--darkColor);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.25rem 1rem;;
+}
+
+main .row-bottom .card a:hover {
+  transition: all 0.2s ease;
+  background-color: gray;
+}
+
+footer {
+  background-color: var(--lightColor);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+}
+
+footer a {
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+footer a img {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+footer a img:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  main .row-top {
+    flex-direction: column-reverse;
+  }
+
+  main .row-top img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+    position: static;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+  }
+
+  header nav {
+    align-self: center;
+  }
+
+  header nav ul {
+    height: 4rem;
+  }
+
+  main .row-top .column h2 span {
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem 1rem;
+  }
+
+  main .row-bottom {
+    flex-direction: column;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  header {
+    padding: 0 1rem 0.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

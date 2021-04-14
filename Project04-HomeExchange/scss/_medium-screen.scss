@@ -1,0 +1,27 @@
+@media (max-width: 1000px) {
+  header .location {
+    padding: 0 4rem 0 1rem;
+  }
+
+  #apartments .container {
+    grid-template-columns: auto auto;
+
+    article {
+      height: 17rem;
+    }
+  }
+
+  #pricing .container table {
+    width: 100%;
+  }
+
+  #contact .container .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    form {
+      width: 100%;
+    }
+  }
+}

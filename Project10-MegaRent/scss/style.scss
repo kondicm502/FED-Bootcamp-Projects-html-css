@@ -1,0 +1,227 @@
+@import 'variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.padding-x {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.padding-y {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.section-title {
+  color: $color-dark;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: $color-primary;
+  color: $color-light;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+    cursor: pointer;
+  }
+}
+
+#intro-section {
+  background: url('../images/background.jpg') center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    padding: 1rem 0.5rem;
+
+    nav {
+      background-color: $color-light;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 1rem;
+      left: 0.5rem;
+      right: 0.5rem;
+      max-width: 100%;
+      padding: 0.5rem 1rem;
+
+      h1 {
+        color: $color-dark;
+        font-size: 1.75rem;
+        
+        span { color: $color-primary; }
+      }
+  
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+  
+        li a {
+          color: $color-dark;
+          font-size: 0.9rem;
+          font-weight: bold;
+          text-decoration: none;
+          transition: all 0.2s ease;
+  
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .intro-content {
+      color: $color-light;
+      text-align: center;
+      text-shadow: 2px 2px #000;
+      margin: 2rem 0;
+      
+      h2 {
+        font-size: 4rem;
+        font-weight: normal;
+        border-bottom: 2px solid $color-primary;
+        padding: 0 3rem 0.25rem 3rem;
+      }
+      
+      h5 {
+        font-size: 2rem;
+        font-weight: normal;
+        padding-top: 0.25rem;
+      }
+    }
+  }
+}
+
+#catalog-section {
+  background-color: $color-light;
+
+  .vehicles-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      h6 { 
+        color: $color-dark;
+        font-size: 1rem;
+      }
+
+      img { width: 100%; }
+    }
+  }
+}
+
+#pricing-section {
+  background-color: #fff;
+
+  .container {
+    
+    table {
+      border-collapse: collapse;
+      width: 600px;
+      margin: auto;
+
+      thead {
+        background-color: $color-primary;
+        color: $color-light;
+
+        th:first-of-type {
+          background-color: darken($color-primary, 10%);
+        }
+      }
+
+      tbody {
+        background-color: #fff;
+
+        tr {
+          border-bottom: 1px solid gray;
+
+          th {
+            background-color: darken(#fff, 10%);
+            color: $color-dark;
+          }
+
+          td { color: $color-dark; }
+        }
+      }
+
+      th, td {
+        text-align: center;
+        padding: 0.75rem;
+      }
+    }
+
+    .btn {
+      display: none;
+      margin: auto;
+    }
+  }
+}
+
+footer {
+  background-color: #000;
+
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    h4 {
+      color: $color-dark;
+      font-size: 1.75rem;
+      border-bottom: 1px solid $color-primary;
+
+      span { color: $color-primary; }
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0.75rem;
+
+      address {
+        color: $color-light;
+      }
+
+      iframe { max-width: 100%; }
+    }
+  }
+}
+
+@import 'medium-screen';
+@import 'small-screen';

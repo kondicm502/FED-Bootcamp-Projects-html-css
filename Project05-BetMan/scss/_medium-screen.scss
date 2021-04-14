@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+  header {
+    nav .container ul li:last-of-type { display: inline; }
+
+    #header-bottom .container {
+      justify-content: center;
+
+      form {
+        display: none;
+      }
+    }
+  }
+
+  #contact .container {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    form {
+      width: 400px;
+      max-width: 100%;
+    }
+  }
+}

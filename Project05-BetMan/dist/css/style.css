@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+nav {
+  background-color: #206a5d;
+}
+nav .container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+nav .container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav .container ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s ease;
+}
+nav .container ul li a:hover {
+  color: #bfdcae;
+}
+nav .container ul li:last-of-type {
+  display: none;
+}
+nav .container ul li:last-of-type a {
+  color: #ff4b5c;
+}
+nav .container ul li:last-of-type a:hover {
+  color: #fe0018;
+}
+
+#header-bottom {
+  background-color: #bfdcae;
+}
+#header-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#header-bottom .container h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#header-bottom .container h1 img {
+  width: 4rem;
+  margin-right: 0.5rem;
+}
+#header-bottom .container h1 span {
+  color: #ff4b5c;
+}
+#header-bottom .container form {
+  align-self: flex-end;
+}
+#header-bottom .container form .form-group input {
+  background-color: #206a5d;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+}
+#header-bottom .container form .form-group input::placeholder {
+  color: #fff;
+}
+#header-bottom .container form .form-group button {
+  background-color: #ff4b5c;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.3rem 1.5rem;
+  transition: all 0.2s ease;
+}
+#header-bottom .container form .form-group button:hover {
+  background-color: #ff3245;
+  cursor: pointer;
+}
+#header-bottom .container form p {
+  color: #206a5d;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-top: 0.3rem;
+}
+#header-bottom .container form p a {
+  color: #ff4b5c;
+}
+#header-bottom .container form p a:hover {
+  color: #e40016;
+}
+
+#intro {
+  background: url("../images/intro.jpg") center center/cover;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1400px;
+}
+#intro .container {
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+#intro .container h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+}
+#intro .container a {
+  background-color: #206a5d;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  border-radius: 0.2rem;
+  padding: 0.4rem 1rem;
+}
+#intro .container a:hover {
+  background-color: #1a564c;
+  color: #bfdcae;
+}
+
+#benefits {
+  background-color: #d6d6d2;
+}
+#benefits .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#benefits .container h2 {
+  color: #206a5d;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+}
+#benefits .container .row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#benefits .container .row .column {
+  text-align: center;
+}
+#benefits .container .row .column img {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+#benefits .container .row .column h3 {
+  color: #ff4b5c;
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+#benefits .container .row .column p {
+  font-family: "Roboto", sans-serif;
+}
+#benefits .container .row .column:hover {
+  cursor: pointer;
+}
+#benefits .container .row .column:hover img {
+  transform: scale(1.1);
+}
+
+#about {
+  background-color: #fff;
+}
+#about .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#about .container h2 {
+  color: #206a5d;
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+#about .container p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+#about .container p span {
+  color: #ff4b5c;
+}
+#about .container a {
+  background-color: #ff4b5c;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.3rem 1.5rem;
+  margin-left: auto;
+  transition: all 0.2s ease;
+}
+#about .container a:hover {
+  background-color: #ff3245;
+}
+
+#contact {
+  background-color: #206a5d;
+}
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#contact .container form {
+  background-color: gray;
+  flex: 1;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+}
+#contact .container form h2 {
+  color: #206a5d;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+#contact .container form .form-group {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+#contact .container form .form-group input {
+  width: 50%;
+}
+#contact .container form > input {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+#contact .container form textarea {
+  resize: none;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+#contact .container form button {
+  background-color: lightgray;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+#contact .container form button:hover {
+  background-color: #bababa;
+  cursor: pointer;
+}
+#contact .container form input, #contact .container form textarea, #contact .container form button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+}
+#contact .container .map {
+  flex: 1;
+  text-align: right;
+}
+#contact .container .map iframe {
+  width: 400px;
+  max-width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 1200px) {
+  header nav .container ul li:last-of-type {
+    display: inline;
+  }
+  header #header-bottom .container {
+    justify-content: center;
+  }
+  header #header-bottom .container form {
+    display: none;
+  }
+
+  #contact .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #contact .container form {
+    width: 400px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: static;
+  }
+  header nav .container {
+    padding: 0;
+  }
+  header nav .container ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  header nav .container ul li {
+    width: 100%;
+    text-align: center;
+  }
+  header nav .container ul li:not(:last-of-type) {
+    border-bottom: 1px solid #bfdcae;
+  }
+  header nav .container ul li a {
+    text-transform: uppercase;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  #header-bottom {
+    display: none;
+  }
+
+  #intro {
+    display: none;
+  }
+
+  #benefits .container .row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #benefits .container .row .column img {
+    max-width: 60%;
+  }
+
+  #about .container h2 {
+    text-align: center;
+  }
+  #about .container p {
+    display: none;
+  }
+  #about .container a {
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  #contact .container .map iframe {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

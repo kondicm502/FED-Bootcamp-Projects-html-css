@@ -1,0 +1,68 @@
+@media (max-width: 600px) {
+  header {
+    position: static;
+
+    .container {
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+  
+      nav {
+        width: 100%;
+  
+        ul {
+          flex-direction: column;
+          gap: 0;
+    
+          li {
+            width: 100%;
+            
+            a {
+              display: block;
+              text-align: center;
+              border-top: 1px solid $color-primary-dark;
+              padding: 0.5rem;
+            }
+  
+            &:last-child {
+              border-bottom: 1px solid $color-primary-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #intro {
+    height: auto;
+    min-height: auto;
+
+    .intro-bottom {
+      position: static;
+
+      .container {
+        padding: 1rem;
+
+        h1 {
+          font-size: 2rem;  
+          text-align: center;
+        }
+
+        p { display: none }
+      }
+    }
+  }
+
+  #our-story .container {
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  #technologies .container {
+    padding: 1rem;
+  }
+
+  #contact .container {
+    padding: 1rem;
+  }
+}

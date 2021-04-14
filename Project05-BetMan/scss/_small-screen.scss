@@ -1,0 +1,55 @@
+@media (max-width: 750px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header {
+    position: static;
+
+    nav .container {
+      padding: 0;
+
+      ul {
+        flex-direction: column;
+        gap: 0;
+    
+        li {
+          width: 100%;
+          text-align: center;
+    
+          &:not(:last-of-type) {
+            border-bottom: 1px solid $color-primary-light;
+          }
+    
+          a {
+            text-transform: uppercase;
+            display: block;
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  #header-bottom { display: none; }
+
+  #intro { display: none; }
+
+  #benefits .container .row {
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .column img { max-width: 60%; }
+  }
+
+  #about .container {
+    h2 { text-align: center; }
+    p { display: none; }
+    a { margin: auto; }
+  }
+}
+
+@media (max-width: 500px) {
+  #contact .container .map iframe { height: 250px; }
+}
